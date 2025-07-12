@@ -1,5 +1,6 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-env
 WORKDIR /app
+RUN ls
 COPY . ./
 
 COPY /*/*.csproj ./
@@ -21,7 +22,6 @@ WORKDIR /out
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 RUN ls
-
 
 COPY --from=build-env /app/src/OguzhanCan.Website/out/ .
 ENTRYPOINT ["dotnet", "OguzhanCan.Website.dll"]
