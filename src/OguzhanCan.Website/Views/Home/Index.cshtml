@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oguzhan Can</title>
+    <link href="~/css/index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="game-container">
+        <div class="controls">
+            Use ← → arrow keys or click to move Mario!<br>
+            Press SPACE or ↑ to jump!<br>
+            Move right to discover more about me!<br>
+            <small>Or use virtual controls below!</small>
+            <a href="#" style="color: white;"> Go To Basic Version</a>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+            <div class="progress-text" id="progressText">Start Journey</div>
+        </div>
+
+        <div class="virtual-controls">
+            <div class="virtual-button jump" id="jumpBtn">↑</div>
+            <div class="horizontal-controls">
+                <div class="virtual-button" id="leftBtn">←</div>
+                <div class="virtual-button" id="rightBtn">→</div>
+            </div>
+        </div>
+
+        <div class="info-panel" id="infoPanel">
+            <h2 id="panelTitle">Welcome!</h2>
+            <div id="panelContent">
+                <p>
+                    Move Mario to the right to start exploring my professional journey! Use arrow keys or click to move.
+                </p>
+            </div>
+        </div>
+
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <script src="~/js/index.js"></script>
+</body>
+
+</html>

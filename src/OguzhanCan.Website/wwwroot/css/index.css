@@ -1,0 +1,211 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background: linear-gradient(180deg, #87CEEB 0%, #98FB98 100%);
+    overflow: hidden;
+    height: 100vh;
+}
+
+.game-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#gameCanvas {
+    display: block;
+    background: linear-gradient(180deg, #87CEEB 0%, #98FB98 100%);
+}
+
+.info-panel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 350px;
+    max-height: 70vh;
+    background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+    .info-panel.active {
+        transform: translateX(0);
+    }
+
+    .info-panel h2 {
+        color: #FFD700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .info-panel h3 {
+        color: #FFD700;
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+.skill-tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 3px 6px;
+    margin: 2px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.project-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border-left: 4px solid #FFD700;
+}
+
+.controls {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 100;
+}
+
+.progress-bar {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 300px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #FFD700, #FFA500);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+    width: 0%;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Scrollbar styling */
+.info-panel::-webkit-scrollbar {
+    width: 6px;
+}
+
+.info-panel::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+}
+
+.info-panel::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+
+    .info-panel::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+@media (max-width: 768px) {
+    .info-panel {
+        width: 280px;
+        font-size: 12px;
+        padding: 15px;
+    }
+
+    .controls {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .progress-bar {
+        width: 250px;
+    }
+}
+
+/* Virtual Controls */
+.virtual-controls {
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+}
+
+.virtual-button {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #333;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+    .virtual-button:hover {
+        background: rgba(255, 255, 255, 1);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .virtual-button:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .virtual-button.jump {
+        background: linear-gradient(135deg, #FFD700, #FFA500);
+        color: #333;
+    }
+
+        .virtual-button.jump:hover {
+            background: linear-gradient(135deg, #FFA500, #FFD700);
+        }
+
+.horizontal-controls {
+    display: flex;
+    flex-direction: row;
+}
