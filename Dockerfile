@@ -1,27 +1,17 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-env
 WORKDIR /app
-RUN ls
-COPY . ./
 
-COPY /*/*.csproj ./
-RUN for file in $(ls *.csproj); do mkdir -p ${file%.*}/ && mv $file ${file%.*}/; done
-RUN ls
+# 1) Copy only the csproj, restore, to leverage Docker cache
+COPY src/OguzhanCan.Website/OguzhanCan.Website.csproj ./src/OguzhanCan.Website/
+RUN dotnet restore ./src/OguzhanCan.Website/OguzhanCan.Website.csproj
 
+# 2) Copy the rest of the sources & publish
+COPY . .
 WORKDIR /app/src/OguzhanCan.Website
-RUN dotnet restore
-COPY . /build
+RUN dotnet publish -c Release -o /app/out
 
-RUN ls
-
-#WORKDIR /OguzhanCan.Website
-RUN dotnet publish -c Release -o out
-
-WORKDIR /out
-
-# Build runtime image
+# 3) Build the runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
-RUN ls
-
-COPY --from=build-env /app/src/OguzhanCan.Website/out/ .
+COPY --from=build-env /app/out .
 ENTRYPOINT ["dotnet", "OguzhanCan.Website.dll"]
