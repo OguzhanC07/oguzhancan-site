@@ -33,6 +33,27 @@ section {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+.skill-tag {
+    display: inline-block;
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 0.4em 0.8em;
+    margin: 0.3em;
+    border-radius: 16px;
+    font-size: 0.9em;
+}
+
+.more-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+    .more-link:hover {
+        text-decoration: underline;
+    }
+
 footer {
     background-color: #333;
     color: white;

@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var currentCulture = System.Globalization.CultureInfo.CurrentUICulture.Name;
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,8 +11,22 @@
 
     @RenderSection("head",true)
 </head>
+
 <body>
+    <!-- Floating Language Switcher -->
+    <div style="position: fixed; bottom: 10px; right: 10px; z-index: 1000; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+        <form id="langForm" asp-controller="Language" asp-action="SetLanguage" method="post" style="margin: 0;">
+            <select name="culture" onchange="this.form.submit()" style="padding: 6px 10px; border-radius: 5px; border: 1px solid #ccc;">
+                <option value="en-US" selected="@(currentCulture == "en-US" ? "selected" : null)">English</option>
+                <option value="tr-TR" selected="@(currentCulture == "tr-TR" ? "selected" : null)">Türkçe</option>
+            </select>
+            <input type="hidden" name="returnUrl" value="@Context.Request.Path" />
+        </form>
+    </div>
+
     @RenderBody()
 </body>
+
+
 </html>
 

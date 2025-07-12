@@ -1,49 +1,100 @@
-﻿@{
+﻿@inject IViewLocalizer Localizer
+@model ClassicPortfolioInformation
+@{
     ViewBag.Title = "Classic";
 }
 @section head {
     <link href="~/css/classic.css" rel="stylesheet" />
 }
 
+
 <header>
-    <h1>Oguzhan Can</h1>
-    <p>Web Developer | Designer | Tech Enthusiast</p>
+    <h1>@Localizer["Name"]</h1>
+    <p>@Localizer["Title"]</p>
     <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
+        <a href="#about">@Localizer["About"]</a>
+        <a href="#projects">@Localizer["Projects"]</a>
+        <a href="#blog">@Localizer["Blog"]</a>
+        <a href="#skills">@Localizer["Skills_Header"]</a>
+        <a href="#contact">@Localizer["Contact"]</a>
     </nav>
 </header>
 
 <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm a web developer with a passion for building clean and simple websites. I enjoy working with HTML, CSS, and JavaScript to bring ideas to life in the browser.</p>
+    <h2>@Localizer["About"]</h2>
+    <p>
+        @Model.AboutMe!.Description
+    </p>
 </section>
 
 <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-        <h3>Project One</h3>
-        <p>A simple project description goes here.</p>
-    </div>
-    <div class="project">
-        <h3>Project Two</h3>
-        <p>Another simple project description here.</p>
-    </div>
+    <h2>@Localizer["Projects"]</h2>
+    @foreach (var project in Model.Projects!)
+    {
+        <div class="project">
+            <h3>@project.Title</h3>
+            <p>@project.Description</p>
+        </div>
+    }
+
+    <a class="more-link" href="">@Localizer["ViewAllProjects"]</a>
 </section>
 
 <section id="blog">
-    <h2>Blog</h2>
-    <p>Blog posts will appear here in the future.</p>
+    <h2>@Localizer["Blog"]</h2>
+    @foreach (var project in Model.BlogPosts!)
+    {
+        <div class="project">
+            <h3>@project.Title</h3>
+            <p>@project.Description</p>
+        </div>
+    }
+
+    <a class="more-link" href="">@Localizer["ViewAllBlogPost"]</a>
 </section>
 
+<section id="skills">
+    <h2>@Localizer["Skills"]</h2>
+    <h3>Microsoft</h3>
+    <div>
+        <span class="skill-tag">Microsoft Dynamics365 CRM</span>
+        <span class="skill-tag">Power Apps</span>
+        <span class="skill-tag">Power Platform</span>
+        <span class="skill-tag">Power Pages</span>
+        <span class="skill-tag">Power Automate</span>
+    </div>
+    <h3>Frontend</h3>
+    <div>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">CSS3</span>
+        <span class="skill-tag">HTML5</span>
+        <span class="skill-tag">Canvas</span>
+    </div>
+    <h3>Backend</h3>
+    <div>
+        <span class="skill-tag">MS SQL</span>
+        <span class="skill-tag">.Net</span>
+        <span class="skill-tag">PostgreSQL</span>
+    </div>
+    <h3>Tools & Others</h3>
+    <div>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">JMeter</span>
+        <span class="skill-tag">CI/CD</span>
+        <span class="skill-tag">Selenium</span>
+        <span class="skill-tag">Docker</span>
+    </div>
+</section>
+
+
 <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:hello@oguzhancan.com">hello@oguzhancan.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+    <h2>@Localizer["Contact"]</h2>
+    @foreach (var contactInfo in Model.ContactInformation!)
+    {
+        <p>@contactInfo.Title <a href="@contactInfo.InternalDescription">@contactInfo.Description</a></p>
+    }
 </section>
 
 <footer>
-    <p>&copy; @DateTime.Now.Year Oguzhan Can</p>
+    <p>&copy; @DateTime.Now.Year @Localizer["Name"]</p>
 </footer>
