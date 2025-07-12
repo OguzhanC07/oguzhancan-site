@@ -26,6 +26,6 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 To run the project locally:
 
 ```bash
-git clone https://github.com/oguzhancan/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/OguzhanC07/oguzhancan-site.git
+cd oguzhancan-site
 dotnet run
