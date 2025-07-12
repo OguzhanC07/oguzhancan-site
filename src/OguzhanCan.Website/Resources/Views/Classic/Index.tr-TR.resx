@@ -119,9 +119,9 @@
     <value>Yetenekler</value>
   </data>
   <data name="ViewAllBlogPost" xml:space="preserve">
-    <value>Tüm Blog Yazılarını Git</value>
+    <value>Tüm Blog Yazılarına Git</value>
   </data>
   <data name="ViewAllProjects" xml:space="preserve">
-    <value>Tüm Projeleri Git</value>
+    <value>Tüm Projelere Git</value>
   </data>
 </root>

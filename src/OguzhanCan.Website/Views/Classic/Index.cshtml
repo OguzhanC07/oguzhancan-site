@@ -23,7 +23,7 @@
 <section id="about">
     <h2>@Localizer["About"]</h2>
     <p>
-        @Model.AboutMe!.Description
+        @Model.AboutMe!.Content
     </p>
 </section>
 
@@ -33,7 +33,7 @@
     {
         <div class="project">
             <h3>@project.Title</h3>
-            <p>@project.Description</p>
+            <p>@project.Content</p>
         </div>
     }
 
@@ -46,7 +46,7 @@
     {
         <div class="project">
             <h3>@project.Title</h3>
-            <p>@project.Description</p>
+            <p>@project.Content</p>
         </div>
     }
 
@@ -91,7 +91,7 @@
     <h2>@Localizer["Contact"]</h2>
     @foreach (var contactInfo in Model.ContactInformation!)
     {
-        <p>@contactInfo.Title <a href="@contactInfo.InternalDescription">@contactInfo.Description</a></p>
+        <p>@contactInfo.Title <a href="@contactInfo.InternalDescription">@contactInfo.Content</a></p>
     }
 </section>
 

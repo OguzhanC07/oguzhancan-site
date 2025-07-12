@@ -20,23 +20,23 @@ namespace OguzhanCan.Website.Controllers
         {
             var classicInformation = new ClassicPortfolioInformation
             {
-                AboutMe = new PortfolioInformation { Title = _localizer["AboutMe_Title"], Description = _localizer["AboutMe_Description"] },
+                AboutMe = new PortfolioInformation { Title = _localizer["AboutMe_Title"], Content = _localizer["AboutMe_Description"] },
                 ContactInformation = new List<PortfolioInformation>
                 {
-                    new PortfolioInformation{ Title = "Email:", InternalDescription = "mailto:hello@oguzhancan.com", Description ="hello@oguzhancan.com"},
-                    new PortfolioInformation{ Title = "Linkedin:", InternalDescription = "https://www.linkedin.com/in/oguzhan-can/", Description = "/in/oguzhan-can/"},
-                    new PortfolioInformation{ Title = "Github:", InternalDescription = "https://github.com/OguzhanC07", Description = "OguzhanC07"},
+                    new PortfolioInformation{ Title = "Email:", InternalDescription = "mailto:hello@oguzhancan.com", Content ="hello@oguzhancan.com"},
+                    new PortfolioInformation{ Title = "Linkedin:", InternalDescription = "https://www.linkedin.com/in/oguzhan-can/", Content = "/in/oguzhan-can/"},
+                    new PortfolioInformation{ Title = "Github:", InternalDescription = "https://github.com/OguzhanC07", Content = "OguzhanC07"},
                 },
                 Projects = new List<PortfolioInformation>
                 {
-                    new PortfolioInformation { Title = _localizer["Projects_Title_1"], Description = _localizer["Projects_Description_1"] },
-                    new PortfolioInformation { Title = _localizer["Projects_Title_2"], Description = _localizer["Projects_Description_2"] }
+                    new PortfolioInformation { Title = _localizer["Projects_Title_1"], Content = _localizer["Projects_Description_1"] },
+                    new PortfolioInformation { Title = _localizer["Projects_Title_2"], Content = _localizer["Projects_Description_2"] }
                 },
 
                 BlogPosts = new List<PortfolioInformation>
                 {
-                    new PortfolioInformation { Title = "Blog Post 1", Description = "Blog post description 1"},
-                    new PortfolioInformation { Title = "Blog Post 2", Description = "Blog post description 2"}
+                    new PortfolioInformation { Title = "Blog Post 1", Content = "Blog post description 1"},
+                    new PortfolioInformation { Title = "Blog Post 2", Content = "Blog post description 2"}
                 }
             };
             return View(classicInformation);

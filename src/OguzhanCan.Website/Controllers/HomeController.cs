@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using OguzhanCan.Website.Models;
 using System.Diagnostics;
 
 namespace OguzhanCan.Website.Controllers
