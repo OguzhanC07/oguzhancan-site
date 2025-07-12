@@ -5,6 +5,10 @@ This site showcases my professional profile, projects I've worked on, and blog p
 
 🌐 **Live site**: [oguzhancan.com](https://oguzhancan.com)
 
+## License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
 ---
 
 ## ✨ Features
