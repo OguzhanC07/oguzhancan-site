@@ -110,9 +110,84 @@
     <value>LC Waikiki CRM Retail Service</value>
   </data>
   <data name="Projects_Title_2" xml:space="preserve">
-    <value>Figopara Satış Projesi</value>
+    <value>Boyner Microsoft Dynamics Crm Projesi</value>
   </data>
   <data name="Projects_Description_2" xml:space="preserve">
-    <value>Figoparaya özel yapılmış satış projesi.</value>
+    <value>Boyner’in e-ticaret, mağaza ve mobil platformlarında veri doğruluğunu ve uyumluluğu artıran, izin yönetimi ve müşteri tekilleştirme süreçlerini kapsayan entegre bir çözüm geliştirdim.</value>
+  </data>
+  <data name="Mario_WelcomeText" xml:space="preserve">
+    <value>Hoşgeldin!</value>
+  </data>
+  <data name="Mario_WelcomeDescription" xml:space="preserve">
+    <value>&lt;p&gt;Merhaba! Ben &lt;strong&gt;Oğuzhan Can&lt;/strong&gt;, yeni zorlukların üstesinden gelmeye hazır, tutkulu bir geliştiriciyim!&lt;/p&gt;&lt;p&gt;Profesyonel yolculuğumu keşfetmeye başlamak için Mario'yu sağa kaydırın!&lt;/p&gt;</value>
+  </data>
+  <data name="Mario_AboutMe_Title" xml:space="preserve">
+    <value>👨‍💻 Hakkımda</value>
+  </data>
+  <data name="Mario_AboutMe_Description" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Konum:&lt;/strong&gt; Mantar Krallığı (Uzaktan)&lt;/p&gt;&lt;p&gt;&lt;strong&gt;E-posta:&lt;/strong&gt; &lt;a href='mailto:hello@oguzhancan.com'&gt;hello@oguzhancan.com&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Deneyim:&lt;/strong&gt; {0}+ yıl boyunca Power Platform, .NET, MSSQL gibi çeşitli teknolojilerle çalıştım&lt;/p&gt;&lt;p&gt;İnteraktif deneyimler geliştirmeyi ve karmaşık problemleri çözmeyi seven tutkulu bir geliştiriciyim. Mario nasıl altın topluyorsa, ben de yeni yetkinlikler ve teknolojiler keşfetmeyi seviyorum!&lt;/p&gt;</value>
+  </data>
+  <data name="Mario_Recent_Projects_Title_1" xml:space="preserve">
+    <value>Setur Müşteri Hizmetleri Projesi</value>
+  </data>
+  <data name="Mario_Recent_Projects_Description_1" xml:space="preserve">
+    <value>Setur için CRM Müşteri Hizmetleri modülünü geliştirdim; müşteri destek süreçlerini sadeleştirerek tüm kanallarda tutarlı ve verimli iletişim sağladım.</value>
+  </data>
+  <data name="Mario_Recent_Projects_Title_2" xml:space="preserve">
+    <value>Koçzer Müşteri Hizmetleri ve Satış ve Marketing Projesi</value>
+  </data>
+  <data name="Mario_Recent_Projects_Description_2" xml:space="preserve">
+    <value>Koçzer için izin yönetimi, satış ve müşteri hizmetleri alanlarında çözümler geliştirdim. İzin gönderme ve alma süreçlerini optimize ettim, müşteri hizmetleri yönetimini geliştirdim ve Koçzer için özelleştirilmiş bir satış sistemi tasarlayarak genel iş verimliliğini artırdım.</value>
+  </data>
+  <data name="Mario_RecentProjects_Title" xml:space="preserve">
+    <value>🌟 Son Yaptığım Projeler</value>
+  </data>
+  <data name="Mario_Blog_Title" xml:space="preserve">
+    <value>📝 Blog</value>
+  </data>
+  <data name="Mario_Blog_Description" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Yakında!&lt;/strong&gt; 🚧&lt;/p&gt;</value>
+  </data>
+  <data name="Mario_Connect_Title" xml:space="preserve">
+    <value>🎯 Bağlantı Kuralım!</value>
+  </data>
+  <data name="Mario_Connect_Description" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Birlikte çalışmaya hazır mısınız?&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Her yeni proje ve yenilikçi fikir için heyecan duyuyorum—gelin birlikte harika işler çıkaralım!&lt;/p&gt; &lt;p&gt;&lt;strong&gt;İletişim:&lt;/strong&gt; &lt;a href="mailto:hello@oguzhancan.com"&gt;hello@oguzhancan.com&lt;/a&gt;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href="https://www.linkedin.com/in/oguzhan-can/"&gt;/in/oguzhan-can/&lt;/a&gt;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href="https://github.com/OguzhanC07"&gt;/OguzhanC07&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Yolculuğuma göz attığınız için teşekkürler! 🎮✨&lt;/p&gt;</value>
+  </data>
+  <data name="Mario_Work_Experience_1" xml:space="preserve">
+    <value>Ölçeklenebilir uygulamaların geliştirilmesine liderlik ediyor, junior geliştiricilere mentorluk yapıyor ve modern yazılım geliştirme yaklaşımlarını uyguluyorum.</value>
+  </data>
+  <data name="Mario_WorkExperience_Present" xml:space="preserve">
+    <value>Günümüz</value>
+  </data>
+  <data name="Mario_Work_Experience_2" xml:space="preserve">
+    <value>FileOrbis  sistemi için .NET Framework ile 2.000'den fazla otomatik UI testi geliştirdim; ayrıca sistemin performansını ölçmek için yük testleri oluşturdum.</value>
+  </data>
+  <data name="Mario_Skills_Title" xml:space="preserve">
+    <value>🛠️ Yetenekler ve Teknolojiler</value>
+  </data>
+  <data name="Mario_Skills_ToolsAndOthers" xml:space="preserve">
+    <value>Araçlar ve Diğer</value>
+  </data>
+  <data name="Mario_Progress_StartJourney" xml:space="preserve">
+    <value>Yolculuğa Başla</value>
+  </data>
+  <data name="Mario_Progress_GettingStarted" xml:space="preserve">
+    <value>Başlarken</value>
+  </data>
+  <data name="Mario_Progress_LearnMore" xml:space="preserve">
+    <value>Daha Fazlasını Öğrenin</value>
+  </data>
+  <data name="Mario_Progress_ExploreProjects" xml:space="preserve">
+    <value>Projeler Keşfediliyor</value>
+  </data>
+  <data name="Mario_Progress_AlmostDone" xml:space="preserve">
+    <value>Nerdeyse Tamamlandı</value>
+  </data>
+  <data name="Mario_Progress_JourneyComplete" xml:space="preserve">
+    <value>Yolculuk Tamamlandı!</value>
+  </data>
+  <data name="Mario_Controls_Description" xml:space="preserve">
+    <value>← → ok tuşlarıyla veya tıklayarak Mario'yu hareket ettirebilirsin!&lt;br&gt;Zıplamak için BOŞLUK tuşunu ya da ↑ tuşunu kullan!&lt;br&gt;Hakkımda daha fazlasını keşfetmek için sağa doğru ilerle!&lt;br&gt;&lt;small&gt;Ya da aşağıdaki sanal kontrol tuşlarını kullanabilirsin!&lt;/small&gt;&lt;a href="/classic" style="color: white;"&gt;Klasik Versiyona Git&lt;/a&gt;</value>
   </data>
 </root>

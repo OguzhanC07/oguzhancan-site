@@ -124,4 +124,7 @@
   <data name="ViewAllProjects" xml:space="preserve">
     <value>View All Projects</value>
   </data>
+  <data name="Skills_ToolsAndOthers" xml:space="preserve">
+    <value>Tools &amp; Others</value>
+  </data>
 </root>

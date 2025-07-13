@@ -43,6 +43,7 @@ let gameState = {
 
 let contentSections = [];
 let progressBar = [];
+let controllerDescription = '';
 
 // Initialize canvas size
 function resizeCanvas() {
@@ -459,6 +460,9 @@ function gameLoop() {
             .then(result => {
                 contentSections = result.contentSections;
                 progressBar = result.progressTexts;
+                controllerDescription = result.controlsDescription
+
+                document.getElementById('controller').innerHTML = controllerDescription;
 
                 updateGame();
             })

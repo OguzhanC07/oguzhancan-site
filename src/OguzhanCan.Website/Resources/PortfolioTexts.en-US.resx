@@ -101,7 +101,7 @@
     <value>About Me</value>
   </data>
   <data name="AboutMe_Description" xml:space="preserve">
-    <value>Experienced developer with a strong skill set in .NET, MSSQL, and the Microsoft Power Platform, including Dynamics 365, Power Automate, Power Apps, and Power Pages.</value>
+    <value>I'm a developer specialized in building integrated and scalable solutions tailored to enterprise needs using MSSQL, .NET, and the Microsoft Power Platform (Dynamics 365, Power Automate, Power Apps, Power Pages). I deliver high value by digitizing end-to-end business processes, particularly in CRM and workflow automation projects.</value>
   </data>
   <data name="Projects_Title_1" xml:space="preserve">
     <value>LC Waikiki CRM Retail Service</value>
@@ -110,9 +110,84 @@
     <value>I developed and continue to enhance LC Waikiki's CRM Retail Service, a fully integrated, multi-channel campaign management system used across Turkey and international markets.</value>
   </data>
   <data name="Projects_Title_2" xml:space="preserve">
-    <value>Figopara Sales Project</value>
+    <value>Boyner Microsoft Dynamics Crm Project</value>
   </data>
   <data name="Projects_Description_2" xml:space="preserve">
-    <value>A sales project specifically designed for Figopara.</value>
+    <value>I developed an integrated solution for customer permission management and deduplication, enhancing data accuracy and compliance across Boyner’s e-commerce, retail, and mobile platforms.</value>
+  </data>
+  <data name="Mario_WelcomeText" xml:space="preserve">
+    <value>Welcome!</value>
+  </data>
+  <data name="Mario_WelcomeDescription" xml:space="preserve">
+    <value>&lt;p&gt;Hello! I'm &lt;strong&gt;Oguzhan Can&lt;/strong&gt;, a passionate developer ready to take on new challenges!&lt;/p&gt;&lt;p&gt;Move Mario to the right to start exploring my professional journey!&lt;/p&gt;</value>
+  </data>
+  <data name="Mario_AboutMe_Title" xml:space="preserve">
+    <value>👨‍💻 About Me</value>
+  </data>
+  <data name="Mario_AboutMe_Description" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Location:&lt;/strong&gt; Mushroom Kingdom (Remote)&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt;&lt;a href='mailto:hello@oguzhancan.com'&gt;hello@oguzhancan.com&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Experience:&lt;/strong&gt; {0}+ years in various technologies such as Power Platform, .Net, MSSQL&lt;/p&gt;&lt;p&gt;I'm a passionate developer who loves creating interactive experiences and solving complex problems. Just like Mario collects coins, I collect new skills and technologies!&lt;/p&gt;</value>
+  </data>
+  <data name="Mario_Recent_Projects_Title_1" xml:space="preserve">
+    <value>Setur Customer Service Project</value>
+  </data>
+  <data name="Mario_Recent_Projects_Description_1" xml:space="preserve">
+    <value>Developed the CRM Customer Service module for Setur, streamlining support processes and ensuring consistent, efficient customer interactions across all channels.</value>
+  </data>
+  <data name="Mario_Recent_Projects_Title_2" xml:space="preserve">
+    <value>Koçzer Customer Service And Sales and Marketing Project</value>
+  </data>
+  <data name="Mario_Recent_Projects_Description_2" xml:space="preserve">
+    <value>I developed solutions for Koçzer in the areas of permission management, sales, and customer service. I optimized permission submission and retrieval processes, enhanced customer service management, and designed a customized sales system for Koçzer, improving overall business efficiency.</value>
+  </data>
+  <data name="Mario_RecentProjects_Title" xml:space="preserve">
+    <value>🌟 Recent Projects</value>
+  </data>
+  <data name="Mario_Blog_Title" xml:space="preserve">
+    <value>📝 Blog &amp; Writing</value>
+  </data>
+  <data name="Mario_Blog_Description" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Coming Soon!&lt;/strong&gt; 🚧&lt;/p&gt;</value>
+  </data>
+  <data name="Mario_Connect_Title" xml:space="preserve">
+    <value>🎯 Let's Connect!</value>
+  </data>
+  <data name="Mario_Connect_Description" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Ready to work together?&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;I'm always excited to take on new challenges and collaborate on innovative projects!&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Contact:&lt;/strong&gt;&lt;a href="mailto:hello@oguzhancan.com"&gt;hello@oguzhancan.com&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href="https://www.linkedin.com/in/oguzhan-can/"&gt; /in/oguzhan-can/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href="https://github.com/OguzhanC07"&gt; /OguzhanC07&lt;/a&gt; &lt;/p&gt;&lt;p&gt;Thanks for exploring my journey! 🎮✨&lt;/p&gt;</value>
+  </data>
+  <data name="Mario_Work_Experience_1" xml:space="preserve">
+    <value>Lead development of scalable applications, mentor junior developers, implement modern practices.</value>
+  </data>
+  <data name="Mario_WorkExperience_Present" xml:space="preserve">
+    <value>Present</value>
+  </data>
+  <data name="Mario_Work_Experience_2" xml:space="preserve">
+    <value>I developed over 2,000 automated UI tests for the FileOrbis system using the .NET framework, also created load tests for fileorbis system.</value>
+  </data>
+  <data name="Mario_Skills_Title" xml:space="preserve">
+    <value>🛠️ Skills &amp; Technologies</value>
+  </data>
+  <data name="Mario_Skills_ToolsAndOthers" xml:space="preserve">
+    <value>Tools &amp; Others</value>
+  </data>
+  <data name="Mario_Progress_StartJourney" xml:space="preserve">
+    <value>Start Journey</value>
+  </data>
+  <data name="Mario_Progress_GettingStarted" xml:space="preserve">
+    <value>Getting Started</value>
+  </data>
+  <data name="Mario_Progress_LearnMore" xml:space="preserve">
+    <value>Learning More</value>
+  </data>
+  <data name="Mario_Progress_ExploreProjects" xml:space="preserve">
+    <value>Exploring Projects</value>
+  </data>
+  <data name="Mario_Progress_AlmostDone" xml:space="preserve">
+    <value>Almost Done</value>
+  </data>
+  <data name="Mario_Progress_JourneyComplete" xml:space="preserve">
+    <value>Journey Complete!</value>
+  </data>
+  <data name="Mario_Controls_Description" xml:space="preserve">
+    <value>Use ← → arrow keys or click to move Mario!&lt;br&gt;Press SPACE or ↑ to jump!&lt;br&gt;Move right to discover more about me!&lt;br&gt;&lt;small&gt;Or use virtual controls below!&lt;/small&gt;&lt;a href="/classic" style="color: white;"&gt; Go To Classic Version&lt;/a&gt;</value>
   </data>
 </root>
